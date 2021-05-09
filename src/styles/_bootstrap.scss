@@ -1,5 +1,24 @@
 @import "~bootstrap/scss/functions";
 
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 2420px,
+  xxxl: 3320px
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 2500px,
+  xxxl: 3400px
+);
+
 $font-size-base: 1rem;
 
 $h1-font-size: $font-size-base * 2;
@@ -32,7 +51,7 @@ $utilities: (
     responsive: true,
     property: justify-content,
     values: (
-      center: center,
+      center: center
     )
   ),
   "align-items": (
@@ -40,7 +59,7 @@ $utilities: (
     property: align-items,
     values: (
       center: center,
-      baseline: baseline,
+      baseline: baseline
     )
   ),
   "margin-y": (
@@ -77,7 +96,7 @@ $utilities: (
     class: fw,
     values: (
       light: $font-weight-light,
-      normal: $font-weight-normal,
+      normal: $font-weight-normal
     )
   ),
   "text-align": (
@@ -87,6 +106,7 @@ $utilities: (
     values: (
       start: left,
       center: center,
+      end: right
     )
   ),
   "color": (
@@ -100,6 +120,7 @@ $utilities: (
     )
   ),
 );
+
 @import "~bootstrap/scss/root";
 @import "~bootstrap/scss/reboot";
 @import "~bootstrap/scss/type";

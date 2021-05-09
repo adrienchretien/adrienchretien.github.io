@@ -1,0 +1,8 @@
+html {
+  @include media-breakpoint-up(xxl) {
+    font-size: 18px;
+  }
+  @include media-breakpoint-up(xxxl) {
+    font-size: 22px;
+  }
+}
